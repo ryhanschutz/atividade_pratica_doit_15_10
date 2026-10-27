@@ -4,11 +4,20 @@ __pycache__/
 *$py.class
 *.so
 
-# Ambientes virtuais
+# Ambientes virtuais (qualquer localizacao)
 .venv/
 venv/
 ENV/
 env/
+*-env/
+*env/
+**/sklearn-env/
+
+# Arquivos compactados e backups
+*.zip
+*.tar.gz
+*.rar
+*.7z
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
@@ -22,10 +31,11 @@ env/
 .DS_Store
 Thumbs.db
 
-# Dados e logs locais
+# Dados e logs locais gerados
 *.log
 data/processed/
 images/inspecoes/*.jpg
+assets/inspecoes/*.jpg
 
 # Segredos e variáveis de ambiente
 .env
